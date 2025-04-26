@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 
 interface SeverityBadgeProps {
   severity: Severity;
+  className?: string;
 }
 
 const SeverityBadge = ({ severity }: SeverityBadgeProps) => {
