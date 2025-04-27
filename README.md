@@ -3,6 +3,10 @@
 
 A responsive dashboard for tracking and managing AI safety incidents.
 
+###Github & Deploy Link:
+   https://github.com/saiteja1245/AI-Safety-Incidents
+   https://aisafetyincidents.netlify.app/
+
 ## Features
 
 - View a list of AI safety incidents with severity indicators
@@ -24,7 +28,40 @@ A responsive dashboard for tracking and managing AI safety incidents.
    npm run dev
    ```
 
-3. Open [http://localhost:8080](http://localhost:8080) to view the dashboard.
+3. npm run build
+This will create a dist directory with the compiled application.
+
+Deployment
+Deploying to Vercel
+This application is configured for easy deployment on Vercel:
+
+Connect your GitHub repository to Vercel
+Vercel will automatically detect the configuration
+The build command is set to npm run build
+The output directory is set to dist
+You can also deploy manually using the Vercel CLI:
+
+npm install -g vercel
+vercel
+Project Structure
+AuthConnectHub/
+├── client/               # Frontend React application
+│   ├── src/              # Source code
+│   │   ├── components/   # React components
+│   │   ├── contexts/     # React contexts
+│   │   ├── hooks/        # Custom hooks
+│   │   ├── lib/          # Utility functions
+│   │   ├── pages/        # Page components
+│   │   └── App.tsx       # Main application component
+│   └── index.html        # HTML template
+├── shared/               # Shared code and types
+│   └── schema.ts         # Type definitions
+├── dist/                 # Built application (generated)
+├── package.json          # Project dependencies and scripts
+├── vercel.json           # Vercel deployment configuration
+└── README.md             # Project documentation
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Usage
 
